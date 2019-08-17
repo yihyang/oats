@@ -1,5 +1,17 @@
 # OATS (Open Application Tracking System)
 
+## Dependencies
+
+- Ruby 2.5.1
+- Rails 5.2.3
+
+## Design
+
+![ERD](diagrams/ERD.png)
+
+
+## To Be Updated
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
