@@ -1,4 +1,4 @@
-### Description
+## Description
 _Please include a summary of the changes here_
 
 ## Types of changes
