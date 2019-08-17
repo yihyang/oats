@@ -1,5 +1,7 @@
 # OATS (Open Application Tracking System)
 
+[![CircleCI](https://circleci.com/gh/yihyang/oats.svg?style=svg)](https://circleci.com/gh/yihyang/oats) [![Maintainability](https://api.codeclimate.com/v1/badges/68cbd54e13e435e6f510/maintainability)](https://codeclimate.com/github/yihyang/oats/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/68cbd54e13e435e6f510/test_coverage)](https://codeclimate.com/github/yihyang/oats/test_coverage)
+
 ## Dependencies
 
 - Ruby 2.5.1
