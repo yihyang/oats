@@ -1,0 +1,29 @@
+h1 Listing jobs
+
+table
+  thead
+    tr
+      th Name
+      th Description
+      th Status
+      th Department
+      th Location
+      th
+      th
+      th
+
+  tbody
+    - @jobs.each do |job|
+      tr
+        td = job.name
+        td = job.description
+        td = job.status
+        td = job.department.name
+        td = job.location.name
+        td = link_to 'Show', admin_job_path(job)
+        td = link_to 'Edit', edit_admin_job_path(job)
+        td = link_to 'Destroy', admin_job_path(job), data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Job', new_admin_job_path
