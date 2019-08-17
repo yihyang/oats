@@ -1,4 +1,4 @@
-# README
+# OATS (Open Application Tracking System)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
