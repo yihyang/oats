@@ -1,0 +1,24 @@
+table
+
+  tr
+    th Name
+    td = @job.name
+  tr
+    th Description
+    td = @job.description
+  tr
+    th Status
+    td = @job.status
+  tr
+    th URL
+    td = @job.url
+  tr
+    th Department
+    td = @job.department.name
+  tr
+    th Location
+    td = @job.location.name
+
+=> link_to 'Edit', edit_admin_job_path(@job)
+'|
+=< link_to 'Back', admin_jobs_path
