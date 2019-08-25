@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature "Admin::Departments::Create", :feature, :admin, :js do
+feature "Admin::Departments::Create", :admin do
   background do
     create_and_login_admin
     visit '/admin/departments/new'
@@ -25,6 +25,7 @@ feature "Admin::Departments::Create", :feature, :admin, :js do
       expect {
         click_button 'Create Department'
       }.to change{Department.count}.by(1)
+
       expect(page).to have_content('Department was successfully created.')
       expect(page).to have_content('Valid Department')
     end
