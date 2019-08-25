@@ -15,7 +15,6 @@ feature "Admin::Departments::Destroy", :admin, :js do
       click_link 'Destroy'
     end
 
-    expect(Department.count).to be_zero
     expect(page).to have_content('Department was successfully destroyed.')
     expect(page).not_to have_content('Finance')
   end

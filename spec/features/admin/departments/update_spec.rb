@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature "Admin::Departments::Show", :admin do
+feature "Admin::Departments::Update", :admin do
   let!(:department) { create(:department) }
 
   background do
