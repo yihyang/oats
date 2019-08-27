@@ -6,4 +6,8 @@ FactoryBot.define do
     department { Department.first || association(:department) }
     location { Location.first || association(:location) }
   end
+
+  trait :active do
+    status { 'active' }
+  end
 end
