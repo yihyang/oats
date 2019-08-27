@@ -1,7 +1,7 @@
 class Admin::JobsController < AdminController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
-  before_action :set_departments, only: [:edit, :new]
-  before_action :set_locations, only: [:edit, :new]
+  before_action :set_departments, only: [:edit, :new, :create, :update]
+  before_action :set_locations, only: [:edit, :new, :create, :update]
 
   # GET /jobs
   def index

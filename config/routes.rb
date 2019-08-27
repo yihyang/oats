@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
+  root to: 'admin/home#index'
+  devise_for :users
+
   namespace :admin do
     get '/', to: 'home#index'
     resources :departments
     resources :jobs
     resources :locations
   end
-  devise_for :users
 
   namespace :api do
     namespace :v1 do
